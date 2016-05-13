@@ -643,7 +643,7 @@ ISR(TIMER0_OVF_vect)
         
         if(oldState==ON && state == OFF) // on --> off
         {
-            // count -> d�ugo�� trwania impulsu
+            // count -> długość trwania impulsu
 
             if(counter < delayThresholdDit)
             {
@@ -677,7 +677,7 @@ ISR(TIMER0_OVF_vect)
         }
         else if(oldState==OFF && state == ON) // off --> on
         {
-            // count -> d�ugo�� trwania przerwy 
+            // count -> długość trwania przerwy 
             
             if(counter > delayThresholdChar && counter <= delayThresholdWord)
             {
